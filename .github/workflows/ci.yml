@@ -1,0 +1,13 @@
+name: python unit tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: unittest
+        run: python3 -m unittest names.py
+      - name: doctest
+        run: python3 -m doctest names.py
