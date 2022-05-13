@@ -21,7 +21,7 @@ def get_first_last_name(name):
 
     # for i in range(len(names)):
     #     names[i] = names[i].capitalize()
-    names = [name.capitalize().strip() for name in names if name != ""]
+    names = [name.capitalize().strip() for name in names]
 
     # print(names)
     return (names[0], " ".join(names[1:]))
